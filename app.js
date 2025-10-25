@@ -9,10 +9,10 @@ const cookieParser = require('cookie-parser');
 const app = express();
 
 // allow Vite dev server origin and credentials
-const FRONTEND_ORIGIN = process.env.FRONTEND_ORIGIN || 'http://localhost:5173';
+const FRONTEND_URL = process.env.FRONTEND_URL || 'http://localhost:5173';
 
 app.use(cors({
-  origin: FRONTEND_ORIGIN,
+  origin: FRONTEND_URL,
   credentials: true
 }));
 app.use(express.json());

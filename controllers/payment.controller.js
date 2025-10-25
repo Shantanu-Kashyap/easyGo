@@ -2,6 +2,7 @@ const { createOrder } = require("../services/payment.service.js")
 const paymentService = require("../services/payment.service");
 
 
+
  const PayController = async(req,res)=>{
     const {amount,info} = req.body;
 
